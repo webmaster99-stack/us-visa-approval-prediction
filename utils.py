@@ -75,8 +75,8 @@ def evaluate_model(model: BaseEstimator | Pipeline, input_features: pd.DataFrame
     roc_auc = roc_auc_score(target_labels, get_predicted_label_probabilities(model, input_features))
 
     print(f"Balanced accuracy score: {accuracy:.4f}")
-    print(f"F1 score: {f1_score:.4f}")
-    print(f"ROC AUC score: {roc_auc}")
+    print(f"F1 score: {f1score:.4f}")
+    print(f"ROC AUC score: {roc_auc:.4f}")
 
 
 def plot_roc_curve(
